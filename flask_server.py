@@ -24,10 +24,9 @@ def limited_infection(graph, amount):
 @app.route("/graph/<name>")
 def graph(name):
 	G = read_graph_with_name(name)
-	
+
 	return jsonify(graph=G)
 
 
 if __name__ == '__main__':
-	app.debug = True
 	app.run()
