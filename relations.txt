@@ -1,0 +1,20 @@
+A coaches B
+A coaches C
+B is coached by A
+B coaches D
+B coaches E
+C is coached by A
+C coaches F
+D is coached by B
+E is coached by B
+F is coached by C
+F is coached by G
+G is coached by I
+G is coached by H
+G coaches F
+H coaches G
+I coaches G
+J coaches K
+J coaches L
+K is coached by J
+L is coached by J
