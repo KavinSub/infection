@@ -1,5 +1,5 @@
 import unittest
-from infection import total_infection, limited_infection, read_graph
+from infection import *
 
 # G looks like this
 #				A     I    H	   J         
@@ -11,15 +11,15 @@ from infection import total_infection, limited_infection, read_graph
 G = {"A": ["B", "C"],
 	 "B": ["A", "D", "E"],
 	 "C": ["A", "F"],
-			 "D": ["B"],
-			 "E": ["B"],
-			 "F": ["C", "G"],
-			 "G": ["F", "I", "H"],
-			 "H": ["G"],
-			 "I": ["G"],
-			 "J": ["K", "L"],
-			 "K": ["J"],
-			 "L": ["J"]}
+	 "D": ["B"],
+	 "E": ["B"],
+	 "F": ["C", "G"],
+	 "G": ["F", "I", "H"],
+	 "H": ["G"],
+	 "I": ["G"],
+	 "J": ["K", "L"],
+	 "K": ["J"],
+	 "L": ["J"]}
 
 class InfectionTest(unittest.TestCase):
 	def test_read_graph(self):
@@ -65,5 +65,21 @@ class InfectionTest(unittest.TestCase):
 
 		self.assertEqual(set(), I)
 
+	def test_total_infection_stepped_case_1(self):
+		L = total_infection_stepped(G, "C")
+		K = [["C"], ["A", "F"], ["B", "G"], ["D", "E", "I", "H"]]
+
+		# For each time step we need to make the list of vertices a set, because the ordering of the elements
+		# within each step may differ
+		for i in range(len(K)):
+			self.assertEqual(set(K[i]), set(L[i]))
+
+	def test_total_infection_stepped_case_2(self):
+		L = total_infection_stepped(G, "J")
+		K = [["J"], ["K", "L"]]
+
+		for i in range(len(K)):
+			self.assertEqual(set(K[i]), set(L[i]))
+			
 if __name__ == '__main__':
 	unittest.main()

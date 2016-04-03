@@ -35,6 +35,35 @@ def total_infection(G, u):
 
 # Input
 # G is the graph representation of user base
+# u is the user that starts infected
+
+# Output 
+# A list L of lists of users. L[i] contains the users to be infected at time step i
+
+def total_infection_stepped(G, u):
+	L = []
+
+	R = set()
+	I = set()
+	B = set()
+
+	I.add(u)
+	R.add(u)
+
+	while len(R) != 0:
+		B = set()
+		L.append(list(R))
+
+		for user in R:
+			for adjacent_user in G[user]:
+				B.add(adjacent_user)
+
+		R = B - I
+		I = I | R
+	return L
+
+# Input
+# G is the graph representation of user base
 # amount is the amount of users we want to infect
 
 # Output
@@ -72,6 +101,36 @@ def limited_infection(G, amount):
 
 	# Since there was no match, we return the null set
 	return set()
+
+# Input
+# G is the graph representation of user base
+# amount is the amount of users we want to infect
+
+# Output
+# Same as total_infection_stepped
+
+def limited_infection_stepped(G, amount):
+	T = set()
+
+	C = []
+
+	U = set(G.keys())
+
+	while T != U:
+		K = list(U - T)
+		user = K[0]
+
+		I = total_infection(G, user)
+
+		C.append(I)
+
+		T = T | I
+
+	for clique in C:
+		if len(clique) == amount:
+			return total_infection_stepped(G, list(clique)[0])
+
+	return []
 
 # Input
 # users_file_name - The name of a file containing a list of users (Vertices)
@@ -114,3 +173,19 @@ def read_graph(users_file_name, relations_file_name):
 	relations_file.close()
 
 	return G
+
+if __name__ == '__main__':
+	G = {"A": ["B", "C"],
+		 "B": ["A", "D", "E"],
+		 "C": ["A", "F"],
+		 "D": ["B"],
+		 "E": ["B"],
+		 "F": ["C", "G"],
+		 "G": ["F", "I", "H"],
+		 "H": ["G"],
+		 "I": ["G"],
+		 "J": ["K", "L"],
+		 "K": ["J"],
+		 "L": ["J"]}
+
+	print(limited_infection_stepped(G, 3))
