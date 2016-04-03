@@ -211,5 +211,36 @@ def read_graph(users_file_name, relations_file_name):
 def read_graph_with_name(graph_name):
 	return read_graph(graphs[graph_name][0], graphs[graph_name][1])
 
+
+# This function was created to make the d3 visualization process smoother. This way no processing has to be 
+# done for the data via javascript.
+# Input
+# G - A graph
+
+# Output
+# nodes - A list of nodes
+# edges -  A list of edges
+def process_graph(G):
+	nodes = []
+	edges = []
+
+	# First process the nodes
+	for key in G.keys():
+		nodes.append({"name":key})
+
+	# Now process the edges
+	edge_set = set()
+	for node in G.keys():
+		for adjacent_node in G[node]:
+			edge = (node, adjacent_node)
+			a, b = edge
+			if (a, b) not in edge_set and (b, a) not in edge_set:
+				edges.append({"source": nodes.index({"name": node}), "target": nodes.index({"name": adjacent_node})})
+				edge_set.add(edge)
+
+	return (nodes, edges)
+
 if __name__ == '__main__':
-	print(limited_infection_wrapper("main", 3))
+	G = read_graph_with_name("main")
+
+	nodes, edges = process_graph(G)
