@@ -208,5 +208,8 @@ def read_graph(users_file_name, relations_file_name):
 
 	return G
 
+def read_graph_with_name(graph_name):
+	return read_graph(graphs[graph_name][0], graphs[graph_name][1])
+
 if __name__ == '__main__':
 	print(limited_infection_wrapper("main", 3))
