@@ -1,5 +1,7 @@
 import re
 
+graphs = {"main": ("users.txt", "relations.txt")}
+
 # Input
 # G is the graph representation of user base
 # u is the user that starts infected
@@ -61,6 +63,22 @@ def total_infection_stepped(G, u):
 		R = B - I
 		I = I | R
 	return L
+
+# Input
+# graph_name - A name for a pre-specified graph
+# u - the name of the user
+
+# Output
+# The list of time steps
+
+def total_infection_wrapper(graph_name, u):
+	filenames = graphs[graph_name]
+	users_file_name = filenames[0]
+	relations_file_name = filenames[1]
+
+	G = read_graph(users_file_name, relations_file_name)
+
+	return total_infection_stepped(G, u)
 
 # Input
 # G is the graph representation of user base
@@ -133,6 +151,22 @@ def limited_infection_stepped(G, amount):
 	return []
 
 # Input
+# graph_name - A name for a pre-specified graph
+# amount - the amount of nodes to infect
+
+# Output
+# The list of time steps
+
+def limited_infection_wrapper(graph_name, amount):
+	filenames = graphs[graph_name]
+	users_file_name = filenames[0]
+	relations_file_name = filenames[1]
+
+	G = read_graph(users_file_name, relations_file_name)
+
+	return limited_infection_stepped(G, amount)
+
+# Input
 # users_file_name - The name of a file containing a list of users (Vertices)
 # relations_file_name - The name of a file containing the relations between users (Edges)
 
@@ -175,17 +209,4 @@ def read_graph(users_file_name, relations_file_name):
 	return G
 
 if __name__ == '__main__':
-	G = {"A": ["B", "C"],
-		 "B": ["A", "D", "E"],
-		 "C": ["A", "F"],
-		 "D": ["B"],
-		 "E": ["B"],
-		 "F": ["C", "G"],
-		 "G": ["F", "I", "H"],
-		 "H": ["G"],
-		 "I": ["G"],
-		 "J": ["K", "L"],
-		 "K": ["J"],
-		 "L": ["J"]}
-
-	print(limited_infection_stepped(G, 3))
+	print(limited_infection_wrapper("main", 3))
