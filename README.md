@@ -6,6 +6,8 @@ The project based interview assignment for Khan Academy.
 The web visualization can be accessed here:
 https://infection-project-ka.herokuapp.com/
 
+The visualization has only been tested on Chrome, Firefox and Safari on desktop. I haven't tested it for mobile yet. Also, the application may take a few seconds to load because the Heroku dyno goes idle after a period of inactivity.
+
 To perform a total infection, click the total infection button and select a node.
 
 To perform a limited infection, first enter a number in the text field, then click limited infection.
