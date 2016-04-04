@@ -1,6 +1,9 @@
 import re
 
-graphs = {"main": ("users.txt", "relations.txt")}
+graphs = {"main": ("users.txt", "relations.txt"), 
+		  "classroom": ("classroom_users.txt", "classroom_relations.txt"),
+		  "party": ("party_users.txt", "party_relations.txt"),
+		  "highschool": ("highschool_users.txt", "highschool_relations.txt")}
 
 # Input
 # G is the graph representation of user base
@@ -211,8 +214,37 @@ def read_graph(users_file_name, relations_file_name):
 def read_graph_with_name(graph_name):
 	return read_graph(graphs[graph_name][0], graphs[graph_name][1])
 
+# Input
+# graph_name
 
-# This function was created to make the d3 visualization process smoother. This way no processing has to be 
+# Output
+# groups - A dictionary, where each node belongs to a group 
+
+def group_users(G):
+
+	T = set()
+	C = []
+	U = set(G.keys())
+
+	while T != U:
+		K = list(U - T)
+		user = K[0]
+
+		I = total_infection(G, user)
+
+		C.append(I)
+
+		T = T | I
+
+	groups = {}
+
+	for index, clique in enumerate(C):
+		for node in clique:
+			groups[node] = index + 1
+
+	return groups
+
+# This function was created to make the d3 visualization process smoother. This way little processing has to be 
 # done for the data via javascript.
 # Input
 # G - A graph
@@ -238,9 +270,14 @@ def process_graph(G):
 				edges.append({"source": nodes.index({"name": node}), "target": nodes.index({"name": adjacent_node})})
 				edge_set.add(edge)
 
+	groups = group_users(G)
+	for node in groups.keys():
+		d = nodes[nodes.index({"name": node})]
+		d["group"] = groups[node] 
+
 	return (nodes, edges)
 
 if __name__ == '__main__':
 	G = read_graph_with_name("main")
 
-	nodes, edges = process_graph(G)
+	print(process_graph(G))

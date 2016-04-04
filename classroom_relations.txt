@@ -1,0 +1,30 @@
+A coaches B
+A coaches C
+A coaches D
+A coaches E
+A coaches F
+B is coached by A
+C is coached by A
+D is coached by A
+E is coached by A
+F is coached by A
+G coaches H
+G coaches I
+G coaches J
+G coaches K
+G coaches L
+H is coached by G
+I is coached by G
+J is coached by G
+K is coached by G
+L is coached by G
+M coaches L
+M coaches N
+M coaches O
+M coaches P
+M coaches Q
+L is coached by M
+N is coached by M
+O is coached by M
+P is coached by M
+Q is coached by M

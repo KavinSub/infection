@@ -1,0 +1,132 @@
+A coaches B
+B is coached by A
+A coaches C
+C is coached by A
+A coaches D
+D is coached by A
+A coaches E
+E is coached by A
+A coaches F
+F is coached by A
+A coaches G
+G is coached by A
+A coaches H
+H is coached by A
+A coaches I
+I is coached by A
+A coaches J
+J is coached by A
+A coaches K
+K is coached by A
+A coaches L
+L is coached by A
+B coaches C
+C is coached by B
+B coaches D
+D is coached by B
+B coaches E
+E is coached by B
+B coaches F
+F is coached by B
+B coaches G
+G is coached by B
+B coaches H
+H is coached by B
+B coaches I
+I is coached by B
+B coaches J
+J is coached by B
+B coaches K
+K is coached by B
+B coaches L
+L is coached by B
+C coaches D
+D is coached by C
+C coaches E
+E is coached by C
+C coaches F
+F is coached by C
+C coaches G
+G is coached by C
+C coaches H
+H is coached by C
+C coaches I
+I is coached by C
+C coaches J
+J is coached by C
+C coaches K
+K is coached by C
+C coaches L
+L is coached by C
+D coaches E
+E is coached by D
+D coaches F
+F is coached by D
+D coaches G
+G is coached by D
+D coaches H
+H is coached by D
+D coaches I
+I is coached by D
+D coaches J
+J is coached by D
+D coaches K
+K is coached by D
+D coaches L
+L is coached by D
+E coaches F
+F is coached by E
+E coaches G
+G is coached by E
+E coaches H
+H is coached by E
+E coaches I
+I is coached by E
+E coaches J
+J is coached by E
+E coaches K
+K is coached by E
+E coaches L
+L is coached by E
+F coaches G
+G is coached by F
+F coaches H
+H is coached by F
+F coaches I
+I is coached by F
+F coaches J
+J is coached by F
+F coaches K
+K is coached by F
+F coaches L
+L is coached by F
+G coaches H
+H is coached by G
+G coaches I
+I is coached by G
+G coaches J
+J is coached by G
+G coaches K
+K is coached by G
+G coaches L
+L is coached by G
+H coaches I
+I is coached by H
+H coaches J
+J is coached by H
+H coaches K
+K is coached by H
+H coaches L
+L is coached by H
+I coaches J
+J is coached by I
+I coaches K
+K is coached by I
+I coaches L
+L is coached by I
+J coaches K
+K is coached by J
+J coaches L
+L is coached by J
+K coaches L
+L is coached by K

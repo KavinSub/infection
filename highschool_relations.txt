@@ -1,0 +1,166 @@
+A coaches B
+B is coached by A
+A coaches C
+C is coached by A
+B coaches C
+C is coached by B
+AA coaches BB
+BB is coached by AA
+AA coaches CC
+CC is coached by AA
+AA coaches DD
+DD is coached by AA
+BB coaches CC
+CC is coached by BB
+BB coaches DD
+DD is coached by BB
+CC coaches DD
+DD is coached by CC
+AAA coaches BBB
+BBB is coached by AAA
+AAA coaches CCC
+CCC is coached by AAA
+AAA coaches DDD
+DDD is coached by AAA
+AAA coaches EEE
+EEE is coached by AAA
+BBB coaches CCC
+CCC is coached by BBB
+BBB coaches DDD
+DDD is coached by BBB
+BBB coaches EEE
+EEE is coached by BBB
+CCC coaches DDD
+DDD is coached by CCC
+CCC coaches EEE
+EEE is coached by CCC
+DDD coaches EEE
+EEE is coached by DDD
+AAAA coaches BBBB
+BBBB is coached by AAAA
+AAAA coaches CCCC
+CCCC is coached by AAAA
+AAAA coaches DDDD
+DDDD is coached by AAAA
+AAAA coaches EEEE
+EEEE is coached by AAAA
+AAAA coaches FFFF
+FFFF is coached by AAAA
+BBBB coaches CCCC
+CCCC is coached by BBBB
+BBBB coaches DDDD
+DDDD is coached by BBBB
+BBBB coaches EEEE
+EEEE is coached by BBBB
+BBBB coaches FFFF
+FFFF is coached by BBBB
+CCCC coaches DDDD
+DDDD is coached by CCCC
+CCCC coaches EEEE
+EEEE is coached by CCCC
+CCCC coaches FFFF
+FFFF is coached by CCCC
+DDDD coaches EEEE
+EEEE is coached by DDDD
+DDDD coaches FFFF
+FFFF is coached by DDDD
+EEEE coaches FFFF
+FFFF is coached by EEEE
+AAAAA coaches BBBBB
+BBBBB is coached by AAAAA
+AAAAA coaches CCCCC
+CCCCC is coached by AAAAA
+AAAAA coaches DDDDD
+DDDDD is coached by AAAAA
+AAAAA coaches EEEEE
+EEEEE is coached by AAAAA
+AAAAA coaches FFFFF
+FFFFF is coached by AAAAA
+AAAAA coaches GGGGG
+GGGGG is coached by AAAAA
+BBBBB coaches CCCCC
+CCCCC is coached by BBBBB
+BBBBB coaches DDDDD
+DDDDD is coached by BBBBB
+BBBBB coaches EEEEE
+EEEEE is coached by BBBBB
+BBBBB coaches FFFFF
+FFFFF is coached by BBBBB
+BBBBB coaches GGGGG
+GGGGG is coached by BBBBB
+CCCCC coaches DDDDD
+DDDDD is coached by CCCCC
+CCCCC coaches EEEEE
+EEEEE is coached by CCCCC
+CCCCC coaches FFFFF
+FFFFF is coached by CCCCC
+CCCCC coaches GGGGG
+GGGGG is coached by CCCCC
+DDDDD coaches EEEEE
+EEEEE is coached by DDDDD
+DDDDD coaches FFFFF
+FFFFF is coached by DDDDD
+DDDDD coaches GGGGG
+GGGGG is coached by DDDDD
+EEEEE coaches FFFFF
+FFFFF is coached by EEEEE
+EEEEE coaches GGGGG
+GGGGG is coached by EEEEE
+FFFFF coaches GGGGG
+GGGGG is coached by FFFFF
+AAAAAA coaches BBBBBB
+BBBBBB is coached by AAAAAA
+AAAAAA coaches CCCCCC
+CCCCCC is coached by AAAAAA
+AAAAAA coaches DDDDDD
+DDDDDD is coached by AAAAAA
+AAAAAA coaches EEEEEE
+EEEEEE is coached by AAAAAA
+AAAAAA coaches FFFFFF
+FFFFFF is coached by AAAAAA
+AAAAAA coaches GGGGGG
+GGGGGG is coached by AAAAAA
+AAAAAA coaches HHHHHH
+HHHHHH is coached by AAAAAA
+BBBBBB coaches CCCCCC
+CCCCCC is coached by BBBBBB
+BBBBBB coaches DDDDDD
+DDDDDD is coached by BBBBBB
+BBBBBB coaches EEEEEE
+EEEEEE is coached by BBBBBB
+BBBBBB coaches FFFFFF
+FFFFFF is coached by BBBBBB
+BBBBBB coaches GGGGGG
+GGGGGG is coached by BBBBBB
+BBBBBB coaches HHHHHH
+HHHHHH is coached by BBBBBB
+CCCCCC coaches DDDDDD
+DDDDDD is coached by CCCCCC
+CCCCCC coaches EEEEEE
+EEEEEE is coached by CCCCCC
+CCCCCC coaches FFFFFF
+FFFFFF is coached by CCCCCC
+CCCCCC coaches GGGGGG
+GGGGGG is coached by CCCCCC
+CCCCCC coaches HHHHHH
+HHHHHH is coached by CCCCCC
+DDDDDD coaches EEEEEE
+EEEEEE is coached by DDDDDD
+DDDDDD coaches FFFFFF
+FFFFFF is coached by DDDDDD
+DDDDDD coaches GGGGGG
+GGGGGG is coached by DDDDDD
+DDDDDD coaches HHHHHH
+HHHHHH is coached by DDDDDD
+EEEEEE coaches FFFFFF
+FFFFFF is coached by EEEEEE
+EEEEEE coaches GGGGGG
+GGGGGG is coached by EEEEEE
+EEEEEE coaches HHHHHH
+HHHHHH is coached by EEEEEE
+FFFFFF coaches GGGGGG
+GGGGGG is coached by FFFFFF
+FFFFFF coaches HHHHHH
+HHHHHH is coached by FFFFFF
+GGGGGG coaches HHHHHH
+HHHHHH is coached by GGGGGG
