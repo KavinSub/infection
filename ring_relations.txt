@@ -1,0 +1,60 @@
+0 coaches 1
+1 is coached by 0
+1 coaches 2
+2 is coached by 1
+2 coaches 3
+3 is coached by 2
+3 coaches 4
+4 is coached by 3
+4 coaches 5
+5 is coached by 4
+5 coaches 6
+6 is coached by 5
+6 coaches 7
+7 is coached by 6
+7 coaches 8
+8 is coached by 7
+8 coaches 9
+9 is coached by 8
+9 coaches 10
+10 is coached by 9
+10 coaches 11
+11 is coached by 10
+11 coaches 12
+12 is coached by 11
+12 coaches 13
+13 is coached by 12
+13 coaches 14
+14 is coached by 13
+14 coaches 15
+15 is coached by 14
+15 coaches 16
+16 is coached by 15
+16 coaches 17
+17 is coached by 16
+17 coaches 18
+18 is coached by 17
+18 coaches 19
+19 is coached by 18
+19 coaches 20
+20 is coached by 19
+20 coaches 21
+21 is coached by 20
+21 coaches 22
+22 is coached by 21
+22 coaches 23
+23 is coached by 22
+23 coaches 24
+24 is coached by 23
+24 coaches 25
+25 is coached by 24
+25 coaches 26
+26 is coached by 25
+26 coaches 27
+27 is coached by 26
+27 coaches 28
+28 is coached by 27
+28 coaches 29
+29 is coached by 28
+29 coaches 0
+0 is coached by 29

@@ -3,7 +3,8 @@ import re
 graphs = {"main": ("users.txt", "relations.txt"), 
 		  "classroom": ("classroom_users.txt", "classroom_relations.txt"),
 		  "party": ("party_users.txt", "party_relations.txt"),
-		  "highschool": ("highschool_users.txt", "highschool_relations.txt")}
+		  "highschool": ("highschool_users.txt", "highschool_relations.txt"),
+		  "ring": ("ring_users.txt", "ring_relations.txt")}
 
 # Input
 # G is the graph representation of user base
