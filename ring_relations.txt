@@ -1,60 +1,60 @@
-0 coaches 1
-1 is coached by 0
-1 coaches 2
-2 is coached by 1
-2 coaches 3
-3 is coached by 2
-3 coaches 4
-4 is coached by 3
-4 coaches 5
-5 is coached by 4
-5 coaches 6
-6 is coached by 5
-6 coaches 7
-7 is coached by 6
-7 coaches 8
-8 is coached by 7
-8 coaches 9
-9 is coached by 8
-9 coaches 10
-10 is coached by 9
-10 coaches 11
-11 is coached by 10
-11 coaches 12
-12 is coached by 11
-12 coaches 13
-13 is coached by 12
-13 coaches 14
-14 is coached by 13
-14 coaches 15
-15 is coached by 14
-15 coaches 16
-16 is coached by 15
-16 coaches 17
-17 is coached by 16
-17 coaches 18
-18 is coached by 17
-18 coaches 19
-19 is coached by 18
-19 coaches 20
-20 is coached by 19
-20 coaches 21
-21 is coached by 20
-21 coaches 22
-22 is coached by 21
-22 coaches 23
-23 is coached by 22
-23 coaches 24
-24 is coached by 23
-24 coaches 25
-25 is coached by 24
-25 coaches 26
-26 is coached by 25
-26 coaches 27
-27 is coached by 26
-27 coaches 28
-28 is coached by 27
-28 coaches 29
-29 is coached by 28
-29 coaches 0
-0 is coached by 29
+A0 coaches A1
+A1 is coached by A0
+A1 coaches A2
+A2 is coached by A1
+A2 coaches A3
+A3 is coached by A2
+A3 coaches A4
+A4 is coached by A3
+A4 coaches A5
+A5 is coached by A4
+A5 coaches A6
+A6 is coached by A5
+A6 coaches A7
+A7 is coached by A6
+A7 coaches A8
+A8 is coached by A7
+A8 coaches A9
+A9 is coached by A8
+A9 coaches A10
+A10 is coached by A9
+A10 coaches A11
+A11 is coached by A10
+A11 coaches A12
+A12 is coached by A11
+A12 coaches A13
+A13 is coached by A12
+A13 coaches A14
+A14 is coached by A13
+A14 coaches A15
+A15 is coached by A14
+A15 coaches A16
+A16 is coached by A15
+A16 coaches A17
+A17 is coached by A16
+A17 coaches A18
+A18 is coached by A17
+A18 coaches A19
+A19 is coached by A18
+A19 coaches A20
+A20 is coached by A19
+A20 coaches A21
+A21 is coached by A20
+A21 coaches A22
+A22 is coached by A21
+A22 coaches A23
+A23 is coached by A22
+A23 coaches A24
+A24 is coached by A23
+A24 coaches A25
+A25 is coached by A24
+A25 coaches A26
+A26 is coached by A25
+A26 coaches A27
+A27 is coached by A26
+A27 coaches A28
+A28 is coached by A27
+A28 coaches A29
+A29 is coached by A28
+A29 coaches A0
+A0 is coached by A29
