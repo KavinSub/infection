@@ -42,3 +42,7 @@ S, I are sets containing the users that will be infected.
 
 One thing to note about limited infection is that set I will be empty if there is no set of nodes fulfilling the criteria 
 of only having amount nodes be infected.
+
+## Tests
+
+Tests are located in infection_test.py.
