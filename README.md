@@ -50,4 +50,5 @@ Tests are located in infection_test.py.
 
 The organization of the files is admittedly a bit of a mess. Here are the more important files:
 flask_server.py - Contains the code for the flask server.
-infection.py - The code that actually runs the simulation. Also contains functions that generates JSON needed to visualize the simulation.
+infection.py - Contains functions that generates JSON needed to visualize the simulation, and the relevant graph algorithms.
+templates/index.html - Contains the javascript code that visualizes the simulation.
