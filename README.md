@@ -1,6 +1,3 @@
-# infection
-The project based interview assignment for Khan Academy.
-
 ## Visualization
 
 The web visualization can be accessed here:
